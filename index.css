@@ -1,0 +1,196 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(
+        180deg,
+        #450707 0%,
+        #240505 20%,
+        #0b0505 55%,
+        #000000 100%
+    );
+
+    color: white;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+}
+
+
+header {
+    text-align: center;
+    padding: 25px 15px 15px;
+    background: rgba(0, 0, 0, 0.75);
+    border-bottom: 2px solid #b5121b;
+}
+
+h1 {
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-size: clamp(42px, 6vw, 70px);
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 8px #8b0000;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 22px;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #641010;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "New Rocker", system-ui;
+    font-size: 21px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e32636;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: #e32636;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+
+main {
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 40px 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px;
+}
+
+
+
+section {
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.85);
+    border: 1px solid #a51c1c;
+    border-left: 4px solid #c41624;
+
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-6px);
+    border-color: #e32636;
+    box-shadow: 0 8px 25px rgba(150, 0, 0, 0.25);
+}
+
+
+
+.artista {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.artista img {
+    width: 100%;
+    max-width: 300px;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+.artista img:hover {
+    filter: brightness(1.15);
+}
+
+
+h3 {
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 18px;
+    color: white;
+}
+
+
+
+section p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #dddddd;
+    margin-bottom: 15px;
+}
+
+
+
+section ul {
+    width: 100%;
+    padding-left: 22px;
+    margin-bottom: 15px;
+    color: #dddddd;
+}
+
+section li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+
+footer {
+    margin-top: 20px;
+    padding: 25px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #a51c1c;
+}
+
+footer h4 {
+    font-family: "New Rocker", system-ui;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+
+

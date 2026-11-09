@@ -1,0 +1,162 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(
+        180deg,
+        #450707 0%,
+        #240505 20%,
+        #0b0505 55%,
+        #000000 100%
+    );
+    color: white;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+}
+
+
+header {
+    text-align: center;
+    padding: 25px 15px 15px;
+    border-bottom: 2px solid #b5121b;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-size: clamp(42px, 6vw, 70px);
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 8px #8b0000;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 22px;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #641010;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "New Rocker", system-ui;
+    font-size: 21px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: #e32636;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+nav a:hover {
+    color: #e32636;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+main {
+    width: 100%;
+    padding: 35px 20px;
+}
+
+section {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 240px;
+    margin: 25px auto;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    background: rgba(0, 0, 0, 0.82);
+    border: 1px solid #a51c1c;
+    border-left: 4px solid #c41624;
+
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    border-color: #e32636;
+    box-shadow: 0 8px 25px rgba(150, 0, 0, 0.2);
+}
+
+
+section img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+section img:hover {
+    filter: brightness(1.15);
+}
+
+
+.texto {
+    flex: 1;
+}
+
+.texto h2 {
+    font-family: "New Rocker", system-ui;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.texto p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #dddddd;
+}
+
+
+footer {
+    margin-top: 20px;
+    padding: 25px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #a51c1c;
+}
+
+footer h4 {
+    font-family: "New Rocker", system-ui;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+
